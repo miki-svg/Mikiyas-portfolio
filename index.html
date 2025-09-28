@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikiyas | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="reveal">
+    <nav>
+      <h1 class="logo">Mikiyas</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="reveal">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h2>Hi, I’m <span class="highlight">Mikiyas 👋</span></h2>
+        <p>
+          I’m a <strong>Software Engineering student</strong> at
+          <strong>Bahir Dar University</strong> (since 2023).  
+          I started building websites in <strong>2025</strong> and I’m passionate
+          about creating modern, responsive web apps.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">See My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <ul class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-title">2023 — Started Software Engineering</div>
+        <div class="timeline-desc">
+          Joined Bahir Dar University and began learning programming with HTML, CSS, and JavaScript.
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-title">2025 — Building Websites</div>
+        <div class="timeline-desc">
+          Started creating real-world websites and projects while diving deeper into frontend and backend development.
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-title">Future Goals</div>
+        <div class="timeline-desc">
+          Continue growing as a full-stack developer and explore Artificial Intelligence applications.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Flappy Bird -->
+      <article class="card">
+        <div class="card-thumb">
+          <img src="assets/flappy.png" alt="Flappy Bird Game Screenshot" class="project-img">
+        </div>
+        <div class="card-body">
+          <h3>Flappy Bird Clone</h3>
+          <p class="short">
+            A physics-based side-scrolling game where you control a bird avoiding obstacles.
+          </p>
+          <button class="more-btn" onclick="toggleDetail(this)">More Detail</button>
+          <p class="detail">
+            I built a clone of the famous Flappy Bird game, implementing smooth gravity mechanics, collision detection,
+            scoring, and responsive controls. The game focuses on challenging yet addictive gameplay while showcasing my
+            ability to handle real-time events and animations.
+          </p>
+          <div class="card-actions">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+          </div>
+        </div>
+      </article>
+  
+      <!-- Tic Tac Toe -->
+      <article class="card">
+        <div class="card-thumb">
+          <img src="assets/tictactoe.png" alt="Tic Tac Toe Game Screenshot" class="project-img">
+        </div>
+        <div class="card-body">
+          <h3>Tic Tac Toe</h3>
+          <p class="short">
+            A two-player strategy game with win/draw detection.
+          </p>
+          <button class="more-btn" onclick="toggleDetail(this)">More Detail</button>
+          <p class="detail">
+            I developed a modern version of Tic Tac Toe that supports two players, validates inputs, and detects winning
+            or draw conditions. The project emphasizes efficient game logic, clean UI design, and user-friendly interaction.
+          </p>
+          <div class="card-actions">
+            <a href="#contact" class="btn btn-primary">Get Details</a>
+          </div>
+        </div>
+      </article>
+  
+      
+  
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="reveal">
+    <p>© 2025 Mikiyas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
