@@ -413,4 +413,46 @@ body {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
-    
+  .social-links {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .social-links h3 {
+    color:blue;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Color for each icon */
+  .social-links .instagram {
+    color: #E1306C;
+  }
+  
+  .social-links .tiktok {
+    color: #000;
+  }
+  
+  .social-links .telegram {
+    color: #0088cc;
+  }
+  
+  .social-links .linkedin {
+    color: #0077b5;
+  }
+  .social-links .github {
+    color: #333; /* or #171515 for the official GitHub black */
+  }
+  

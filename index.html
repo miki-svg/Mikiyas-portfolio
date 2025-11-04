@@ -11,6 +11,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
@@ -73,7 +74,14 @@
   <!-- Projects Section -->
   <section id="projects" class="reveal">
     <h2>Projects</h2>
-    <div class="projects-grid">
+    <!-- Deployed portfolio link -->
+  <p>
+    
+      My portfolio showcases my projects, including the Flappy Bird Game, Tic Tac Toe Game, and several other creative works. <br>
+      You can view all my projects on my GitHub here: 
+      <a href="https://github.com/miki-svg/Mikiyas-portfolio/blob/main/index.html" target="_blank">github.com/miki-svg</a>
+  </p>
+        <div class="projects-grid">
       
       <!-- Flappy Bird -->
       <article class="card">
@@ -127,15 +135,38 @@
   <!-- Contact Section -->
   <section id="contact" class="reveal">
     <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
+    <form action="https://formspree.io/f/mvgwnzkn" method="POST" id="contactForm" >
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message"></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
-
-  <!-- Footer -->
+  
+  
+  <div class="social-links">
+    <h3>🌍 Connect with Me</h3>
+    
+    <a href="https://instagram.com/@miki.la29" target="_blank" class="instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="https://tiktok.com/@mikiyas.la.29" target="_blank" class="tiktok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    
+    <a href="https://t.me/@Mikitaryan" target="_blank" class="telegram">
+      <i class="fab fa-telegram"></i>
+    </a>
+    
+    <a href="https://linkedin.com/in/miki-svg" target="_blank" class="linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/miki-svg" target="_blank" class="github">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  
   <footer class="reveal">
     <p>© 2025 Mikiyas</p>
   </footer>
