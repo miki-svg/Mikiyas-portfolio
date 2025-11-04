@@ -86,18 +86,25 @@
   });
 })();
 
-document.querySelector("form").addEventListener("submit", function(e) {
+// Contact form using Formspree
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    alert("Thanks for reaching out, Mikiyas will get back to you soon! ");
-  });
-  function toggleDetail(button) {
-    const detail = button.nextElementSibling;
-    if (detail.style.display === "block") {
-      detail.style.display = "none";
-      button.textContent = "More Detail";
+
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      alert("✅ Thank you! Your message has been sent successfully.");
+      form.reset();
     } else {
-      detail.style.display = "block";
-      button.textContent = "Less Detail";
+      alert("❌ Oops! Something went wrong. Please try again.");
     }
-  }
-  
+  });
+});
