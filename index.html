@@ -11,121 +11,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-black text-white text-sm md:text-base">
+  <body class="bg-gradient-to-br from-[#0a0118] via-[#120025] to-[#1a0033] text-white">
 
-    <!-- Header -->
-    <header>
-      <nav class="nav">
-        <h1 class="logo">Mikiyas</h1>
-        <ul>
-          <li>
-            <a href="index.html" class="text-blue-500 font-semibold">Home</a>
-          </li>
-          <li><a href="about.html" class="hover:text-blue-500">About</a></li>
-          <li>
-            <a href="projects.html" class="hover:text-blue-500">Projects</a>
-          </li>
-          <li>
-            <a href="contact.html" class="hover:text-blue-500">Contact</a>
-          </li>
+    <!-- ================= NAVBAR ================= -->
+    <header class="py-6">
+      <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <h1 class="text-xl font-semibold tracking-wide">Mikiyas</h1>
+
+        <ul class="flex gap-8 text-sm">
+          <li><a href="index.html" class="text-blue-400 font-semibold">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+          <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section
-      class="min-h-screen flex items-center bg-gradient-to-br from-black via-slate-900 to-black"
-    >
+    <!-- ================= HERO ================= -->
+    <section class="min-h-screen flex items-center">
       <div
-        class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center"
+        class="max-w-7xl mx-auto px-6 w-full"
       >
-        <!-- Text Content -->
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-            Hi,<br />
-            I’m <span class="text-blue-500">Mikiyas</span>
-          </h1>
+        <!-- Rounded container -->
+        <div
+          class="bg-gradient-to-br from-[#120025] to-[#05010f] rounded-[2.5rem] p-10 md:p-16 grid md:grid-cols-2 gap-14 items-center shadow-2xl"
+        >
 
-          <p class="mt-4 text-lg text-gray-300">
-            Software Engineer & Web Developer
-          </p>
+          <!-- TEXT -->
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+              Hi,<br />
+              I’m <span class="text-blue-400">Mikiyas</span>
+            </h1>
 
-          <p class="mt-6 text-gray-400 max-w-xl">
-            <p class="mt-6 text-gray-400 max-w-xl">
+            <p class="mt-4 text-lg text-gray-300">
+              Software Engineer & Web Developer
+            </p>
+
+            <p class="mt-6 text-gray-400 max-w-xl leading-relaxed">
               I am a Software Engineering student at Bahir Dar University and a passionate
               Web Developer. I focus on building responsive and user-friendly web
               applications, with hands-on experience developing real-world projects such as
               games and full-stack applications, while continuously strengthening my
               problem-solving and software design skills.
             </p>
-            
-          </p>
 
-          <!-- Buttons -->
-          <div class="mt-8 flex gap-4">
-            <a href="projects.html" class="px-6 py-3 bg-blue-600 rounded-lg">
-              View Projects
-            </a>
-            <a
-              href="contact.html"
-              class="px-6 py-3 border border-gray-600 rounded-lg"
+            <!-- BUTTONS -->
+            <div class="mt-8 flex gap-4">
+              <a
+                href="projects.html"
+                class="px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 transition shadow-lg"
+              >
+                View Projects
+              </a>
+
+              <a
+                href="contact.html"
+                class="px-7 py-3 rounded-full border border-white/20 hover:border-blue-400 transition"
+              >
+                Contact Me
+              </a>
+            </div>
+
+            <!-- SOCIALS -->
+            <div class="mt-8 flex items-center gap-6 text-gray-400">
+              <a href="https://github.com/miki-svg" target="_blank" class="hover:text-white transition">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/mikiyas-beyene-1b74a4386" target="_blank" class="hover:text-blue-400 transition">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+
+              <a href="https://t.me/Mikitariyan" target="_blank" class="hover:text-sky-400 transition">
+                <i class="fab fa-telegram text-xl"></i>
+              </a>
+
+              <a href="https://instagram.com/miki.la29" target="_blank" class="hover:text-pink-500 transition">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- IMAGE -->
+          <div class="flex justify-center">
+            <div
+              class="relative w-72 h-80 rounded-2xl overflow-hidden
+                     bg-gradient-to-br from-blue-500 to-purple-600 p-[2px]"
             >
-              Contact Me
-            </a>
+              <div class="w-full h-full rounded-2xl overflow-hidden bg-black">
+                <img
+                  src="assets/profile.jpg"
+                  alt="Mikiyas profile photo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
 
-          <!-- Social Icons -->
-          <div class="mt-6 flex items-center gap-5 text-gray-400">
-
-            <!-- GitHub -->
-            <a href="https://github.com/miki-svg" target="_blank" aria-label="GitHub"
-               class="hover:text-white transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.45.11-3.03 0 0 .97-.31 3.18 1.17a11.1 11.1 0 0 1 5.8 0c2.2-1.48 3.17-1.17 3.17-1.17.64 1.58.24 2.74.12 3.03.74.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.64.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
-              </svg>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/mikiyas-beyene-1b74a4386" target="_blank"
-               aria-label="LinkedIn"
-               class="hover:text-blue-500 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.45 20.45h-3.55v-5.4c0-1.29-.03-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.85v5.51H9.47V9h3.41v1.56h.05c.48-.9 1.65-1.8 3.4-1.8 3.63 0 4.3 2.39 4.3 5.49v6.2zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
-              </svg>
-            </a>
-
-            <!-- Telegram -->
-            <a href="https://t.me/Mikitariyan" target="_blank"
-               aria-label="Telegram"
-               class="hover:text-sky-400 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9.04 15.42 8.8 19.1c.36 0 .52-.15.71-.34l1.7-1.62 3.52 2.57c.64.36 1.1.17 1.27-.6l2.3-10.8c.22-.99-.36-1.38-.98-1.14L3.25 10.6c-.95.36-.94.87-.16 1.11l3.9 1.21 9.04-5.7c.42-.26.8-.12.49.14"/>
-              </svg>
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://instagram.com/miki.la29" target="_blank"
-               aria-label="Instagram"
-               class="hover:text-pink-500 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7 2h10c2.76 0 5 2.24 5 5v10c0 2.76-2.24 5-5 5H7c-2.76 0-5-2.24-5-5V7c0-2.76 2.24-5 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5a4.5 4.5 0 1 1 0 9a4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5zm4.75-2.75a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/>
-              </svg>
-            </a>
-
-          </div>
-        </div>
-
-        <!-- Profile Image -->
-        <div class="flex justify-center">
-          <div
-            class="w-72 h-80 rounded-2xl overflow-hidden rotate-3 border border-white/20"
-          >
-            <img
-              src="assets/profile.jpg"
-              class="w-full h-full object-cover -rotate-3"
-              alt="Mikiyas profile photo"
-            />
-          </div>
         </div>
       </div>
     </section>
