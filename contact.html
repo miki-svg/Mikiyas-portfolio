@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Mikiyas</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-[#020617] text-white text-sm md:text-base">
+
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+      <nav class="nav">
+        <h1 class="logo">Mikiyas</h1>
+        <ul>
+          <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+          <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
+          <li>
+            <a href="contact.html" class="text-blue-500 font-semibold">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="min-h-screen flex items-center">
+      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+        <!-- LEFT CONTENT -->
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Have a project, internship opportunity, or collaboration in mind?
+            Feel free to reach out. I’m always open to discussing new ideas,
+            real-world software challenges, and learning opportunities.
+          </p>
+
+          <ul class="space-y-4 text-gray-300">
+            <li>📍 Ethiopia</li>
+            <li>🎓 Software Engineering Student at Bahir Dar University</li>
+            <li>💼 Open to internships & collaborative projects</li>
+          </ul>
+
+          <!-- SOCIAL ICONS -->
+          <div class="flex gap-6 mt-8 text-xl">
+            <a
+              href="https://github.com/abenezer2112"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mikiyas-beyene-1b74a4386"
+              target="_blank"
+              class="text-gray-400 hover:text-blue-500 transition"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://t.me/mikitaryan"
+              target="_blank"
+              class="text-gray-400 hover:text-sky-400 transition"
+            >
+              <i class="fab fa-telegram"></i>
+            </a>
+
+            <a
+              href="https://instagram.com/miki.la29"
+              target="_blank"
+              class="text-gray-400 hover:text-pink-500 transition"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form
+          action="https://formspree.io/f/mvgwnzkn"
+          method="POST"
+          class="bg-white/5 backdrop-blur-lg p-8 rounded-xl border border-white/10"
+        >
+          <h3 class="text-2xl font-semibold mb-6">Send a Message</h3>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full mb-4 p-3 rounded bg-black/40 text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:border-blue-500"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full mb-4 p-3 rounded bg-black/40 text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:border-blue-500"
+          />
+
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            class="w-full mb-6 p-3 rounded bg-black/40 text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:border-blue-500"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full py-3 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

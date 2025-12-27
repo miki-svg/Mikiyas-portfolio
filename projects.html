@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Mikiyas</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-white text-sm md:text-base">
+
+    <!-- Header -->
+    <header>
+        <nav class="nav">
+          <h1 class="logo">Mikiyas</h1>
+          <ul>
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+            <li>
+              <a href="projects.html" class="text-blue-500 font-semibold">
+                Projects
+              </a>
+            </li>
+            <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+    <!-- Projects Section -->
+    <section
+      class="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black py-16"
+    >
+    <div class="max-w-6xl mx-auto px-5">
+
+        <h2 class="text-4xl font-bold mb-4">Projects</h2>
+
+        <p class="text-gray-400 mb-12 max-w-2xl">
+          My portfolio showcases my projects, including the Flappy Bird Game,
+          Tic Tac Toe Game, and a Real-Time Chat Application. You can view more
+          on my GitHub:
+          <a
+            href="https://github.com/miki-svg"
+            target="_blank"
+            class="text-blue-500 hover:underline"
+          >
+            github.com/miki-svg
+          </a>
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Flappy Bird -->
+          <article
+            class="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="assets/flappy.png"
+              alt="Flappy Bird Game Screenshot"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Flappy Bird Clone</h3>
+              <p class="text-gray-400 mb-4">
+                A physics-based side-scrolling game where you control a bird
+                avoiding obstacles.
+              </p>
+              <button
+                class="text-blue-500 font-semibold mb-4"
+                onclick="toggleDetail(this)"
+              >
+                More Detail
+              </button>
+              <p class="text-gray-300 detail hidden">
+                I built a clone of the famous Flappy Bird game, implementing
+                smooth gravity mechanics, collision detection, scoring, and
+                responsive controls.
+              </p>
+              <a
+                href="contact.html"
+                class="inline-block mt-4 px-4 py-2 bg-blue-600 rounded-lg"
+                >Hire Me</a
+              >
+            </div>
+          </article>
+
+          <!-- Tic Tac Toe -->
+          <article
+            class="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="assets/tictactoe.png"
+              alt="Tic Tac Toe Game Screenshot"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Tic Tac Toe</h3>
+              <p class="text-gray-400 mb-4">
+                A two-player strategy game with win/draw detection.
+              </p>
+              <button
+                class="text-blue-500 font-semibold mb-4"
+                onclick="toggleDetail(this)"
+              >
+                More Detail
+              </button>
+              <p class="text-gray-300 detail hidden">
+                I developed a modern version of Tic Tac Toe that supports two
+                players, validates inputs, and detects winning or draw
+                conditions.
+              </p>
+              <a
+                href="contact.html"
+                class="inline-block mt-4 px-4 py-2 bg-blue-600 rounded-lg"
+                >Get Details</a
+              >
+            </div>
+          </article>
+
+          <!-- Real-Time Chat App -->
+          <article
+            class="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="assets/chatty.png"
+              alt="Real-Time Chat Application Screenshot"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Real-Time Chat Application</h3>
+              <p class="text-gray-400 mb-4">
+                A modern real-time messaging web application with online status
+                and authentication.
+              </p>
+              <button
+                class="text-blue-500 font-semibold mb-4"
+                onclick="toggleDetail(this)"
+              >
+                More Detail
+              </button>
+              <p class="text-gray-300 detail hidden">
+                I built a full-stack real-time chat application using WebSockets
+                for instant communication, REST APIs for authentication, and a
+                responsive UI.
+              </p>
+              <a
+                href="https://github.com/miki-svg"
+                target="_blank"
+                class="inline-block mt-4 px-4 py-2 bg-blue-600 rounded-lg"
+              >
+                View Code
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/80 backdrop-blur-md py-6 mt-16">
+      <p class="text-center text-gray-500">© 2025 Mikiyas</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

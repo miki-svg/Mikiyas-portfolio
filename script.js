@@ -108,3 +108,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+function toggleDetail(button) {
+  const detail = button.nextElementSibling;
+
+  if (!detail) return;
+
+  const isOpen = detail.style.display === "block";
+
+  detail.style.display = isOpen ? "none" : "block";
+  button.textContent = isOpen ? "More Detail" : "Less Detail";
+}
+
